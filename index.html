@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="search">
+                <div class="enter">
+                    <img id="loc" src="images/location.png" alt="">
+                    <input type="text" class="input-box" placeholder="Enter location">
+                </div>
+                <div class="button">
+                    <button class="btn"><img id="sear" src="images/search.png" alt=""></button>
+                </div>
+            </div>
+            <div class="notfound">
+                <h2>Sorry, Location not found</h2>
+                <img src="images/404.png" alt="">
+            </div>
+            <div class="weatherbody">
+                <div class="weather-image">
+                    <img class="weather-img" alt="">
+                </div>
+                <div class="tempearture">
+                    <p class="temp">0</p><sup>৹</sup>C
+                </div>
+                <div class="description">
+                    <p class="des" r</p>
+                </div>
+                <div class="other">
+                    <img id="humid" src="images/humid.png" alt="">
+                    <div class="humidity">
+                        <h3>Humidity</h3>
+                        <p class="humid"></p>
+                    </div>
+                    <img src="images/wind.png" id="wind" alt="">
+                    <div class="windy">
+                        <h3>Wind</h3>
+                        <p class="wind"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

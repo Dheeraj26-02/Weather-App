@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body {
+    display: flex;
+    height: 100vh;
+    background: url("/images/wallpaper.jpg") no-repeat center;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.094);
+    backdrop-filter: blur(10px);
+    width: 380px;
+    border-radius: 30px;
+    border: none;
+}
+.enter
+{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.122);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 220px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.button
+{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.122);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-top: 20px;
+    width: 80px;
+    border-radius: 30px;
+    margin-left: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 320px;
+}
+
+.search img {
+    width: 35px;
+    height: 35px;
+}
+.btn{
+    outline: none;
+    background: transparent;
+    border: none;
+}
+.search #loc:hover {
+    cursor: pointer;
+    transition: 2.5s ease;
+    transform: rotateY(360deg);
+}
+
+#sear {
+    width: 30px;
+    height: 30px;
+}
+
+.search #sear:hover {
+    cursor: pointer;
+    transition: .5s ease;
+    transform: scale(1.2);
+}
+
+.search input {
+    border-radius: 30px;
+    height: 60px;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    width: 220px;
+}
+
+input::placeholder {
+    color: white;
+
+}
+.weather-image{
+    display: flex;
+    margin-top: 30px;
+}
+.weather-image img {
+    width: 120px;
+    height: 120px;
+}
+
+.tempearture{
+    display: flex;
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+}
+.notfound{
+    margin: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.notfound img{
+    width: 300px;
+    height: 300px;
+}
+.tempearture p{
+    display: inline;
+}
+.description{
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+.weatherbody{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.other img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.other{
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
+.humidity{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+.windy{
+    display: flex;
+    flex-direction: column;
+}
+#humid:hover{
+    cursor: pointer;
+    animation:drip .5s ;
+    animation-delay: .5s;
+}
+@keyframes drip {
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(25px);
+    }
+}
+#wind:hover{
+    cursor: pointer;
+    animation:speed .5s;
+    animation-delay: .5s;
+}
+@keyframes speed {
+    0%{
+        transform: translateX(-60px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+@keyframes shaking {
+    0%{
+        transform: translateX(-20px);
+        border: 2px solid red;
+    }
+    12.5%{
+        transform: translateX(0px);
+        border: 2px solid red;
+    }
+    32.5%{
+        transform: translateX(20px);
+        border: 2px solid red;
+    }
+    
+    50%{
+        transform: translateX(0px);
+        border: 2px solid red;
+    }
+    67.5%{
+        transform: translateX(-20px);
+        border: 2px solid red;
+    }
+    75%{
+        transform: translateX(0px);
+        border: 2px solid red;
+    }
+    85.5%{
+        transform: translateX(20px);
+        border: 2px solid red;
+    }
+    100%{
+        transform: translateX(0px);
+        border: 2px solid red;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .body {
+        background: url("/images/mobilewallpaper.jpg") no-repeat center;
+        background-size: 160%;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+}
